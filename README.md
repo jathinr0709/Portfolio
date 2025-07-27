@@ -42,7 +42,7 @@ Below are screenshots of the main sections of the website. These capture the lay
 ## Contact
 - **Email** 📧:[🔗] (mailto:jathinr0709@gmail.com) 
 - **LinkedIn** : [🔗](https://www.linkedin.com/in/rjathin/) 
-- **GitHub** 🐙:[🔗](https://github.com/jathinr0709)
+- [**GitHub** 🐙🔗](https://github.com/jathinr0709)
 
 If you'd like to discuss my work or potential opportunities, reach out! 👋
 
