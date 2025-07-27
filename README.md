@@ -1,4 +1,4 @@
-# Jathin R Portfolio Website 🚀
+# MY Portfolio Website 🚀
 
 Welcome to my personal portfolio website! 🌟 This is a modern, responsive site showcasing my work as a passionate data analyst and web developer specializing in Gen AI and technologies like Python, Flask, React, and JavaScript. The website features smooth scroll snapping, animated transitions, and a starry night background for an immersive experience.
 
