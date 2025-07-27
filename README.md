@@ -25,13 +25,12 @@ View the live website [here](https://your-deployed-url.com) (replace with your a
 Below are screenshots of the main sections of the website. These capture the layout, design, and key features. 🖼️
 
 ### About Me Section
-![About me ](<img width="1436" height="783" alt="Screenshot 2025-07-27 at 2 59 29 PM" src="https://github.com/user-attachments/assets/8b823901-bd41-4076-9668-6eb6341dc8b6" />
-)  
-*Full-screen hero with avatar on left, bio and buttons on right, over a starry background.*
+![About me ]
+<img width="1440" height="783" alt="Screenshot 2025-07-27 at 3 01 05 PM" src="https://github.com/user-attachments/assets/9325639e-cb28-4972-bbd9-2672ccb00aae" />
 
 ### Projects Section
-![Projects Section](screenshots/projects-section.png)  
-*Grid of project cards showcasing recent works like news aggregators and AI projects.*
+!Projects Section 
+<img width="1440" height="900" alt="Screenshot 2025-07-27 at 3 01 23 PM" src="https://github.com/user-attachments/assets/e748d498-062b-496b-897c-fec086a32233" />
 
 ### Certificates Section
 ![Certificates Section](screenshots/certificates-section.png)  
