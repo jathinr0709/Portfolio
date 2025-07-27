@@ -40,7 +40,7 @@ Below are screenshots of the main sections of the website. These capture the lay
 
 
 ## Contact
-- [**Email** 📧] (mailto:jathinr0709@gmail.com) 
+- [**Email** 📧](mailto:jathinr0709@gmail.com) 
 - [**LinkedIn**🔗](https://www.linkedin.com/in/rjathin/) 
 - [**GitHub** 🐙](https://github.com/jathinr0709)
 
