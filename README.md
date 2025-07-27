@@ -19,33 +19,30 @@ This portfolio is designed to highlight my skills, projects, certifications, and
 The site is built using React for the UI, Tailwind CSS for styling, and Framer Motion for animations, ensuring a clean, user-centric experience. 💻
 
 ## Live Demo
-View the live website [here](https://your-deployed-url.com) (replace with your actual deployment link, e.g., Vercel, Netlify, or GitHub Pages). 🔗
+View the live website [here](https://rjathin.com) (replace with your actual deployment link, e.g., Vercel, Netlify, or GitHub Pages). 🔗
 
 ## Screenshots
 Below are screenshots of the main sections of the website. These capture the layout, design, and key features. 🖼️
 
 ### About Me Section
-![About me ]
 <img width="1440" height="783" alt="Screenshot 2025-07-27 at 3 01 05 PM" src="https://github.com/user-attachments/assets/9325639e-cb28-4972-bbd9-2672ccb00aae" />
 
 ### Projects Section
-!Projects Section 
 <img width="1440" height="900" alt="Screenshot 2025-07-27 at 3 01 23 PM" src="https://github.com/user-attachments/assets/e748d498-062b-496b-897c-fec086a32233" />
 
 ### Certificates Section
-![Certificates Section](screenshots/certificates-section.png)  
-*Centered grid displaying certifications from Google and IBM.*
+<img width="1428" height="772" alt="Screenshot 2025-07-27 at 7 42 49 PM" src="https://github.com/user-attachments/assets/ce89da14-dc8f-4a60-9ae6-dbcf1c273bb8" />
+
 
 ### Get in Touch Section
-![Get in Touch Section](screenshots/contact-section.png)  
-*Centered contact form with links to social platforms and email.*
+<img width="1438" height="781" alt="Screenshot 2025-07-27 at 7 43 06 PM" src="https://github.com/user-attachments/assets/d647f0f5-b466-45cb-b284-6c1a1ce5acba" />
 
-*(To use this README: Create a new GitHub repository, add a `screenshots` folder, upload your actual website screenshots there with the filenames above, and copy this markdown into your repo's README.md file. No code files are needed.)*
+
 
 ## Contact
-- **Email** 📧: [your.email@example.com](mailto:your.email@example.com) (update with your actual email)
-- **LinkedIn** 🔗: [Your LinkedIn Profile](https://www.linkedin.com/in/your-linkedin) (update link)
-- **GitHub** 🐙: [Your GitHub Profile](https://github.com/your-github) (update link)
+- **Email** 📧: [your.email@example.com](mailto:jathinr0709@gmail.com) 
+- **LinkedIn** 🔗: [Your LinkedIn Profile](https://www.linkedin.com/in/rjathin/) 
+- **GitHub** 🐙: [Your GitHub Profile](https://github.com/jathinr0709)
 
 If you'd like to discuss my work or potential opportunities, reach out! 👋
 
