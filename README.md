@@ -9,7 +9,7 @@ This portfolio is designed to highlight my skills, projects, certifications, and
 - **Responsive Design** 📱: Optimized for both mobile and desktop devices.
 - **Smooth Scrolling** ⬇️: Full-page snap scrolling with smooth behavior.
 - **Animations** 🎥: Subtle fade-in effects with a "paper flip" transition for section reveals.
-- **Starry Background** ⭐: A fixed, immersive starry night image that spans the entire site.
+- **Starry Background** ⭐: A fixed, immersive starry night image that spans the entire site. 
 - **Sections** 📑:
   - **Hero/About Me**: Introduction with avatar, bio, and call-to-action buttons.
   - **Projects**: Grid of project cards with descriptions and "View Code" buttons.
