@@ -19,7 +19,7 @@ This portfolio is designed to highlight my skills, projects, certifications, and
 The site is built using React for the UI, Tailwind CSS for styling, and Framer Motion for animations, ensuring a clean, user-centric experience. 💻
 
 ## Live Demo
-View the live website [here](https://rjathin.com) (replace with your actual deployment link, e.g., Vercel, Netlify, or GitHub Pages). 🔗
+View the live website (https://rjathin.com) 🔗
 
 ## Screenshots
 Below are screenshots of the main sections of the website. These capture the layout, design, and key features. 🖼️
