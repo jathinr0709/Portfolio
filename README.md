@@ -19,6 +19,16 @@ Live site: [rjathin.com](https://www.rjathin.com/)
 
 Added supporting text to the experience notebook area so the section feels more complete and explains the journey from data analysis to AI automation and GenAI systems.
 
+## Screenshots
+
+### Home
+
+![Portfolio home screenshot](public/screenshots/portfolio-home.png)
+
+### Work section
+
+![Portfolio work screenshot](public/screenshots/portfolio-work.png)
+
 ## Tech Stack
 
 - React
