@@ -102,6 +102,7 @@ function ExperienceShowcase() {
   return (
     <section ref={ref} className="showcase experience-showcase">
       <div className="show-pin">
+        <ExperienceContext />
         <div className="show-fade">
           <div className="note-stack experience-stack">
             {EXPERIENCES.map((item) => <ExperienceNote key={item.id} p={scrollYProgress} {...item} />)}
@@ -109,6 +110,26 @@ function ExperienceShowcase() {
         </div>
       </div>
     </section>
+  )
+}
+
+function ExperienceContext() {
+  const notes = [
+    { k: 'creative', title: 'AI creative systems', text: 'Prompt-led production workflows for video, static ads, and brand content.' },
+    { k: 'automation', title: 'Automation thinking', text: 'OpenAI APIs, n8n, webhooks, testing, and repeatable AI-assisted operations.' },
+    { k: 'data', title: 'Data to decisions', text: 'Cleaning, EDA, feature engineering, reporting, and production dataset analysis.' },
+    { k: 'product', title: 'Practical GenAI', text: 'Building useful tools that turn messy inputs into clear, reliable outputs.' },
+  ]
+
+  return (
+    <div className="experience-context" aria-hidden="true">
+      {notes.map((note) => (
+        <div className={`experience-context-card experience-context-card--${note.k}`} key={note.k}>
+          <span>{note.title}</span>
+          <p>{note.text}</p>
+        </div>
+      ))}
+    </div>
   )
 }
 
@@ -249,14 +270,49 @@ function ContactSection() {
           <h3>Jathin R</h3>
           <p>Computer Science graduate focused on AI applications, intelligent automation, and product-minded engineering.</p>
           <div className="contact-links">
-            <a href="mailto:jathinr0709@gmail.com">jathinr0709@gmail.com</a>
-            <a href="https://www.linkedin.com/in/rjathin/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="https://github.com/jathinr0709" target="_blank" rel="noreferrer">GitHub</a>
+            <a className="contact-icon-link" href="mailto:jathinr0709@gmail.com" aria-label="Email Jathin R">
+              <ContactIcon type="email" />
+            </a>
+            <a className="contact-icon-link" href="https://www.linkedin.com/in/rjathin/" target="_blank" rel="noreferrer" aria-label="Open LinkedIn profile">
+              <ContactIcon type="linkedin" />
+            </a>
+            <a className="contact-icon-link" href="https://github.com/jathinr0709" target="_blank" rel="noreferrer" aria-label="Open GitHub profile">
+              <ContactIcon type="github" />
+            </a>
           </div>
           <small>Bangalore, India</small>
         </div>
       </motion.div>
       <div className="contact-signature">Jathin R</div>
     </section>
+  )
+}
+
+function ContactIcon({ type }) {
+  if (type === 'email') {
+    return (
+      <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+        <path d="M4 6h16v12H4z" />
+        <path d="m4 7 8 6 8-6" />
+      </svg>
+    )
+  }
+
+  if (type === 'linkedin') {
+    return (
+      <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+        <path d="M6.5 10v8" />
+        <path d="M6.5 7.2v.1" />
+        <path d="M11 18v-8" />
+        <path d="M11 13.4c0-2.1 1.2-3.5 3.1-3.5 1.8 0 3 1.2 3 3.4V18" />
+        <path d="M3.8 3.8h16.4v16.4H3.8z" />
+      </svg>
+    )
+  }
+
+  return (
+    <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+      <path d="M12 3.8a8.2 8.2 0 0 0-2.6 16c.4.1.5-.2.5-.4v-1.5c-2.1.5-2.6-.9-2.6-.9-.3-.8-.8-1.1-.8-1.1-.7-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.7 1.2 1.8.9 2.2.7.1-.5.3-.9.5-1.1-1.7-.2-3.5-.9-3.5-3.8 0-.8.3-1.5.8-2.1-.1-.2-.4-1 .1-2.1 0 0 .7-.2 2.2.8a7.6 7.6 0 0 1 4 0c1.5-1 2.2-.8 2.2-.8.5 1.1.2 1.9.1 2.1.5.6.8 1.3.8 2.1 0 2.9-1.8 3.5-3.5 3.8.3.2.5.7.5 1.4v2.2c0 .2.1.5.5.4A8.2 8.2 0 0 0 12 3.8Z" />
+    </svg>
   )
 }
