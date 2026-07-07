@@ -2,9 +2,9 @@ import { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 
 const RANK = [
-  { y: -18, s: 1.06, r: -2, x: 0 },
-  { y: 24, s: 0.95, r: 5, x: 28 },
-  { y: 50, s: 0.86, r: -6, x: -24 },
+  { y: -10, s: 1.08, r: -2, x: 0 },
+  { y: 24, s: 1, r: 5, x: 34 },
+  { y: 56, s: 0.92, r: -6, x: -30 },
 ]
 
 const EXPERIENCES = [
@@ -98,11 +98,13 @@ export default function Showcase() {
 function ExperienceShowcase() {
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end end'] })
+  const contextOpacity = useTransform(scrollYProgress, [0, 0.18, 0.25, 0.9, 0.98], [0, 0, 1, 1, 0])
+  const contextY = useTransform(scrollYProgress, [0.18, 0.25], [28, 0])
 
   return (
     <section ref={ref} className="showcase experience-showcase">
       <div className="show-pin">
-        <ExperienceContext />
+        <ExperienceContext style={{ opacity: contextOpacity, y: contextY }} />
         <div className="show-fade">
           <div className="note-stack experience-stack">
             {EXPERIENCES.map((item) => <ExperienceNote key={item.id} p={scrollYProgress} {...item} />)}
@@ -113,7 +115,7 @@ function ExperienceShowcase() {
   )
 }
 
-function ExperienceContext() {
+function ExperienceContext({ style }) {
   const notes = [
     { k: 'creative', title: 'AI creative systems', text: 'Prompt-led production workflows for video, static ads, and brand content.' },
     { k: 'automation', title: 'Automation thinking', text: 'OpenAI APIs, n8n, webhooks, testing, and repeatable AI-assisted operations.' },
@@ -122,14 +124,14 @@ function ExperienceContext() {
   ]
 
   return (
-    <div className="experience-context" aria-hidden="true">
+    <motion.div className="experience-context" style={style} aria-hidden="true">
       {notes.map((note) => (
         <div className={`experience-context-card experience-context-card--${note.k}`} key={note.k}>
           <span>{note.title}</span>
           <p>{note.text}</p>
         </div>
       ))}
-    </div>
+    </motion.div>
   )
 }
 

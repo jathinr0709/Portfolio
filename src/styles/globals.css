@@ -199,8 +199,8 @@ main{ position:relative; z-index:1; }
 .experience-context-card--data::after{ right:-28px; top:-24px; transform:rotate(-32deg); }
 .experience-context-card--product::after{ left:-28px; top:-24px; transform:rotate(110deg); }
 .note-stack{ position:relative; display:grid; place-items:center; z-index:6; }
-.experience-stack{ transform:translateY(clamp(150px,22vh,230px)); }
-.experience-note{ position:relative; grid-area:1/1; width:360px; min-height:230px; padding:31px 34px 28px;
+.experience-stack{ transform:translateY(clamp(86px,14vh,145px)); }
+.experience-note{ position:relative; grid-area:1/1; width:clamp(420px,33vw,520px); min-height:300px; padding:40px 46px 36px;
   color:#27231f; filter:drop-shadow(0 24px 36px rgba(0,0,0,.5)); pointer-events:none;
   background-color:#f4e7d4; background-image:repeating-linear-gradient(to bottom,transparent 0 31px,rgba(178,75,54,.15) 31px 32px);
   clip-path:polygon(1% 3%,98% 0,100% 95%,94% 100%,4% 98%,0 91%); }
@@ -208,12 +208,12 @@ main{ position:relative; z-index:1; }
   repeating-linear-gradient(to right,transparent 0 25px,rgba(98,126,134,.17) 25px 26px),
   repeating-linear-gradient(to bottom,transparent 0 25px,rgba(98,126,134,.17) 25px 26px); }
 .experience-note--cream{ background-color:#eadbc2; background-image:var(--noise); }
-.experience-note h2{ max-width:275px; margin:23px 0 2px; color:#d84937;
-  font:700 27px/1.02 'Averia Serif Libre',serif; }
-.experience-note h3{ color:#765f50; font:600 14px/1.3 'IBM Plex Sans',sans-serif; }
-.experience-note p{ margin-top:19px; max-width:290px; font:16px/1.37 'Gochi Hand',cursive; }
-.experience-dates{ position:absolute; top:17px; left:34px; font:12px 'JetBrains Mono',monospace; color:#8b7361; }
-.experience-arrow{ position:absolute; right:25px; bottom:16px; color:var(--tomato); font-size:28px; }
+.experience-note h2{ max-width:390px; margin:31px 0 4px; color:#d84937;
+  font:700 clamp(30px,2.55vw,39px)/1.02 'Averia Serif Libre',serif; }
+.experience-note h3{ color:#765f50; font:600 17px/1.3 'IBM Plex Sans',sans-serif; }
+.experience-note p{ margin-top:28px; max-width:390px; font:20px/1.38 'Gochi Hand',cursive; }
+.experience-dates{ position:absolute; top:22px; left:46px; font:14px 'JetBrains Mono',monospace; color:#8b7361; }
+.experience-arrow{ position:absolute; right:31px; bottom:20px; color:var(--tomato); font-size:34px; }
 
 /* ---------- LONG-FORM PORTFOLIO ---------- */
 .portfolio-section{ position:relative; z-index:3; width:min(1120px,78vw); margin:0 auto; padding:15vh 0; }
@@ -300,9 +300,10 @@ main{ position:relative; z-index:1; }
   .experience-context-card--automation{ right:5%; top:24%; }
   .experience-context-card--data{ left:5%; bottom:14%; }
   .experience-context-card--product{ right:5%; bottom:14%; }
-  .experience-stack{ transform:translateY(clamp(155px,23vh,220px)); }
-  .experience-note{ width:310px; min-height:210px; padding:28px; }
-  .experience-note h2{ font-size:23px; }
+  .experience-stack{ transform:translateY(clamp(105px,17vh,170px)); }
+  .experience-note{ width:min(410px,70vw); min-height:260px; padding:34px; }
+  .experience-note h2{ font-size:28px; }
+  .experience-note p{ font-size:17px; }
   .portfolio-section{ width:min(88vw,720px); }
   .project-grid{ grid-template-columns:1fr; }
   .skills-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); }
@@ -325,8 +326,12 @@ main{ position:relative; z-index:1; }
   .experience-context-card span{ font-size:17px; }
   .experience-context-card p{ display:none; }
   .experience-context-card::before{ inset:-9px -11px; }
-  .experience-stack{ transform:translateY(180px); }
-  .experience-note{ width:min(300px,78vw); }
+  .experience-stack{ transform:translateY(150px); }
+  .experience-note{ width:min(330px,78vw); min-height:235px; padding:28px; }
+  .experience-note h2{ font-size:23px; margin-top:24px; }
+  .experience-note h3{ font-size:13px; }
+  .experience-note p{ font-size:16px; margin-top:17px; }
+  .experience-dates{ top:15px; left:28px; font-size:11px; }
   .portfolio-section{ width:88vw; padding:11vh 0; }
   .portfolio-intro{ margin-bottom:42px; }
   .portfolio-intro h2{ font-size:44px; letter-spacing:-1px; }
