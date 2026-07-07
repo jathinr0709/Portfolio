@@ -22,7 +22,7 @@ const EXPERIENCES = [
     id: 'hypergo',
     cls: 'experience-note--grid',
     role: 'AI Creative Associate Intern',
-    company: 'Hypergo.ai · Bangalore',
+    company: 'Hypergro · Bangalore',
     dates: 'Aug 2024 — Oct 2024',
     detail: 'Built AI-assisted systems with OpenAI APIs, n8n, webhooks, automation tools, and prompt engineering.',
     spread: { y: -155, s: 1, r: 5, x: 270 },
@@ -98,24 +98,10 @@ export default function Showcase() {
 function ExperienceShowcase() {
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end end'] })
-  const labelOpacity = useTransform(scrollYProgress, [0.14, 0.2, 0.88, 0.96], [0, 1, 1, 0])
 
   return (
     <section ref={ref} className="showcase experience-showcase">
       <div className="show-pin">
-        <motion.div className="experience-label" style={{ opacity: labelOpacity }}>
-          <span>My journey so far</span>
-          <strong>Three roles. One growing AI practice.</strong>
-          <p>
-            I started by cleaning and understanding real-world data, then moved into AI automation,
-            prompt-led production workflows, and practical GenAI systems that help teams move faster.
-          </p>
-          <div className="experience-highlights" aria-label="Experience highlights">
-            <span>Data analysis</span>
-            <span>AI workflows</span>
-            <span>Automation</span>
-          </div>
-        </motion.div>
         <div className="show-fade">
           <div className="note-stack experience-stack">
             {EXPERIENCES.map((item) => <ExperienceNote key={item.id} p={scrollYProgress} {...item} />)}

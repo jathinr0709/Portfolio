@@ -128,6 +128,18 @@ main{ position:relative; z-index:1; }
 .leaf{ position:relative; }
 .leaf--hero{ height:63vh; }
 .leaf--beliefs{ height:64vh; }
+.experience-board-copy{ position:absolute; left:50%; top:22%; z-index:5; width:min(920px,84%);
+  transform:translateX(-50%); text-align:center; pointer-events:none; }
+.experience-board-copy>span{ display:inline-block; color:var(--tomato); letter-spacing:.4px;
+  font:clamp(20px,2vw,28px) 'Gochi Hand',cursive; transform:rotate(-2deg); }
+.experience-board-copy h2{ max-width:900px; margin:14px auto 0; color:#2a2622; letter-spacing:-2px;
+  font:700 clamp(42px,6vw,88px)/.98 'Averia Serif Libre',serif; }
+.experience-board-copy p{ max-width:690px; margin:18px auto 0; color:rgba(42,38,34,.68);
+  font:clamp(14px,1.35vw,18px)/1.55 'IBM Plex Sans',sans-serif; }
+.experience-board-chips{ display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-top:18px; }
+.experience-board-chips span{ border:1.5px solid rgba(227,83,66,.42); border-radius:999px; padding:7px 13px;
+  color:var(--tomato); background:rgba(255,248,234,.78); box-shadow:0 10px 24px rgba(0,0,0,.1);
+  font:15px 'Gochi Hand',cursive; letter-spacing:.2px; }
 
 /* fold shadow where the two pages meet */
 .seam{ position:relative; height:0; }
@@ -168,18 +180,7 @@ main{ position:relative; z-index:1; }
 .show-pin{ position:sticky; top:0; height:100vh; overflow:hidden; }
 .show-fade{ position:absolute; inset:0; display:grid; place-items:center; }
 .note-stack{ position:relative; display:grid; place-items:center; z-index:6; }
-.experience-label{ position:absolute; left:50%; top:18vh; z-index:8; width:min(780px,88vw);
-  transform:translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:5px;
-  color:var(--cream); text-align:center; pointer-events:none; }
-.experience-label span{ font:20px 'Gochi Hand',cursive; color:var(--tomato); letter-spacing:.4px; }
-.experience-label strong{ max-width:760px; font:700 clamp(31px,4.7vw,66px)/1.02 'Averia Serif Libre',serif; }
-.experience-label p{ max-width:660px; margin-top:14px; color:rgba(243,230,210,.78);
-  font:clamp(14px,1.45vw,18px)/1.55 'IBM Plex Sans',sans-serif; }
-.experience-highlights{ display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-top:18px; }
-.experience-highlights span{ border:1.5px solid rgba(243,230,210,.7); border-radius:999px; padding:7px 13px;
-  color:var(--cream); background:rgba(25,22,19,.42); box-shadow:0 10px 26px rgba(0,0,0,.24);
-  font:14px 'Gochi Hand',cursive; letter-spacing:.2px; }
-.experience-stack{ transform:translateY(clamp(118px,18vh,190px)); }
+.experience-stack{ transform:translateY(clamp(150px,22vh,230px)); }
 .experience-note{ position:relative; grid-area:1/1; width:360px; min-height:230px; padding:31px 34px 28px;
   color:#27231f; filter:drop-shadow(0 24px 36px rgba(0,0,0,.5)); pointer-events:none;
   background-color:#f4e7d4; background-image:repeating-linear-gradient(to bottom,transparent 0 31px,rgba(178,75,54,.15) 31px 32px);
@@ -270,8 +271,7 @@ main{ position:relative; z-index:1; }
 
 @media (max-width:900px){
   .book-case{ width:min(720px,82vw); }
-  .experience-label{ left:50%; top:13vh; }
-  .experience-stack{ transform:translateY(clamp(120px,17vh,170px)); }
+  .experience-stack{ transform:translateY(clamp(155px,23vh,220px)); }
   .experience-note{ width:310px; min-height:210px; padding:28px; }
   .experience-note h2{ font-size:23px; }
   .portfolio-section{ width:min(88vw,720px); }
@@ -285,13 +285,14 @@ main{ position:relative; z-index:1; }
   .book-case{ width:90vw; padding:12px; }
   .leaf--hero{ height:68vh; }
   .leaf--beliefs{ height:68vh; }
+  .experience-board-copy{ top:14%; width:86%; }
+  .experience-board-copy h2{ font-size:clamp(34px,10vw,48px); letter-spacing:-1px; }
+  .experience-board-copy p{ margin-top:12px; font-size:13px; line-height:1.45; }
+  .experience-board-chips{ gap:7px; margin-top:12px; }
+  .experience-board-chips span{ padding:5px 9px; font-size:12px; }
   .ribbon-strap{ top:calc(12px + 68vh); }
   .showcase{ height:330vh; }
-  .experience-label{ left:50%; right:auto; top:11vh; text-align:center; align-items:center; }
-  .experience-label p{ max-width:78vw; font-size:13px; line-height:1.45; margin-top:10px; }
-  .experience-highlights{ gap:7px; margin-top:12px; }
-  .experience-highlights span{ padding:5px 9px; font-size:12px; }
-  .experience-stack{ transform:translateY(132px); }
+  .experience-stack{ transform:translateY(180px); }
   .experience-note{ width:min(300px,78vw); }
   .portfolio-section{ width:88vw; padding:11vh 0; }
   .portfolio-intro{ margin-bottom:42px; }
